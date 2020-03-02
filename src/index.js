@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Counter from './Components/Counter/Counter';
+// import App from './App';
+// import * as serviceWorker from './serviceWorker';
+import ReactComp from './Components/ReactComp';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const HelloReact = <h1>YOLO</h1>;
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// const name ={
+//     nm: 'Season'
+// }
+
+// ReactDOM.render(ReactComp(name), document.getElementById("root"));
+ReactDOM.render(<Counter name = "Andrew"/>, document.getElementById("root"));
+// ReactDOM.render(<App />, document.getElementById('root'));
+
+
