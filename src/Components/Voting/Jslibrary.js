@@ -22,7 +22,6 @@ class Jslibrary extends React.Component {
                 <h3>{this.state.count} {this.props.name}
                 <button onClick = {this.updateVote}>Vote</button>
                 </h3>
-                
             </div>
         )
     }
