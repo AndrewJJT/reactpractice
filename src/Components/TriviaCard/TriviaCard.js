@@ -22,16 +22,16 @@ class TriviaCard extends React.Component {
     Question(props){
         return (
             // 2nd way to refer back to this
-            <div onClick = {this.handleQuestionClick.bind(this)}>
-                <h1>{props.title}</h1>
-                <h3>{props.question}]</h3>
+            <div>
+                <h1>{props.topic.title}</h1>
+                <h3>{props.description}]</h3>
             </div>
         )
     }
-
+    // onClick = {this.handleHintClick.bind(this)}
     Hint(props){
         return (
-            <div onClick = {this.handleHintClick.bind(this)}>
+            <div >
                 <h3>
                    { props.hint}
                 </h3>
@@ -51,6 +51,8 @@ class TriviaCard extends React.Component {
         else{
             quesHint = this.Hint(this.props)
         }
+
+        quesHint = this.Question
 
         return (
             <div className="card" style={{width:"18rem"}}>
