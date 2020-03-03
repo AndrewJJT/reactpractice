@@ -7,6 +7,8 @@ import Counter from './Components/Counter/Counter';
 // import * as serviceWorker from './serviceWorker';
 import ReactComp from './Components/ReactComp';
 import TriviaCard from './Components/TriviaCard/TriviaCard';
+import Voting from './Components/Voting/Voting';
+
 
 const HelloReact = <h1>YOLO</h1>;
 
@@ -15,9 +17,9 @@ const HelloReact = <h1>YOLO</h1>;
 // }
 
 // ReactDOM.render(ReactComp(name), document.getElementById("root"));
-ReactDOM.render(<TriviaCard title="Baseball" 
-                question="Who holds the...."
-                hint="This player stole...."/>, document.getElementById("root"));
+// ReactDOM.render(<TriviaCard title="Baseball" 
+//                 question="Who holds the...."
+//                 hint="This player stole...."/>, document.getElementById("root"));
 // ReactDOM.render(<App />, document.getElementById('root'));
-
+ReactDOM.render(<Voting />, document.getElementById('root'));
 

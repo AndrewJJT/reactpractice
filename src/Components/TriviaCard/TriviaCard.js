@@ -3,6 +3,7 @@ import React from 'react';
 class TriviaCard extends React.Component {
     constructor(props){
         super(props);
+        // 1st (better)way to refer back to this
         // this.handleHintClick = this.handleHintClick.bind(this)
         // this.handleQuestionClick = this.handleQuestionClick.bind(this)
         this.state = {
@@ -20,6 +21,7 @@ class TriviaCard extends React.Component {
 
     Question(props){
         return (
+            // 2nd way to refer back to this
             <div onClick = {this.handleQuestionClick.bind(this)}>
                 <h1>{props.title}</h1>
                 <h3>{props.question}]</h3>
